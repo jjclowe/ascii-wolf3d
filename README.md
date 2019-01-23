@@ -17,10 +17,23 @@ Use the package manager [npm](https://www.npmjs.com/get-npm) to install dependen
 npm install
 ```
 
-## Running
+## Playing
 
 Best results in a 120 x 30 console.
 
 ```bash
 node index
 ```
+
+### Controls
+
+Due to the constraints with Node.js and the missing `keydown` and `keyup` events, `keypress` has been used instead.  So player movement is controlled by toggling keys, not by holding them down.
+
+Keys | Action
+--- | ---
+w,a,s,d | Player translation (toggle)
+q,e | Player rotation (toggle)
+x | Turn 180
+f | Toggle all doors
+tab | Toggle stats and instructions
+m | Toggle minimap
