@@ -179,10 +179,10 @@ class wolf3d {
 
   drawStats() {
     const stats = `X:${this.playerX.toFixed(1)} Y:${this.playerY.toFixed(1)} FPS:${this.fps}`;
-    const keys1 = "w,a,s,d = move";
-    const keys2 = "q,e = rotate";
+    const keys1 = "w,a,s,d = move (toggle)";
+    const keys2 = "q,e = rotate (toggle)";
     const keys3 = "x = turn 180";
-    const keys4 = "f = toggle doors";
+    const keys4 = "f = doors (toggle)";
     this.screen.splice(0, stats.length, ...stats);
     this.screen.splice(this.screenWidth, keys1.length, ...keys1);
     this.screen.splice(this.screenWidth * 2, keys2.length, ...keys2);
