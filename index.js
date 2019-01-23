@@ -16,12 +16,3 @@ function bindKeys() {
 const game = new wolf3d({ mapPath: "./maps/0.txt" });
 game.gameLoop();
 bindKeys();
-
-// console.log(`
-// CPU: ${chalk.red("90%")}
-// RAM: ${chalk.green("40%")}
-// DISK: ${chalk.yellow("70%")}
-// `);
-
-// process.stdout.write("\x1b[36m" + "test message" + "\x1b[0m");
-// process.stdout.write("\x1b[32m" + "test message" + "\x1b[0m");
